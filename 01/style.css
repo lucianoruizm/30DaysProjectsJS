@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Plus+Jakarta+Sans:wght@200&family=Press+Start+2P&family=Roboto&family=Roboto+Condensed&family=Scada&display=swap');
+
+
+body {
+    background: #171717ee;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+}
+
+main {
+    background: #171717;
+    height: 500px;
+    width: 400px;
+    box-shadow: 3px 3px 10px 2px #20ad07;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.text-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1rem;
+    color: #f1f1f1;
+}
+
+.text-title {
+    font-weight: bold;
+    align-self: center;
+}
+
+#text {
+     /* From https://css.glass */
+    background: rgba(46, 138, 12, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    border: 1px solid rgba(46, 138, 12, 0.24);
+     /* From https://css.glass */
+    color: #f1f1f1;
+    height: 7rem;
+    width: 20rem;
+    border: none;
+    outline: 2px solid #20ad07;
+    border-radius: .5rem;
+    resize: none;
+    font-size: 15px;
+    padding: 8px 10px;
+}
+
+.voice-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1rem;
+    color: #f1f1f1;
+}
+
+.voice-title {
+    font-weight: bold;
+    align-self: center;
+}
+
+#voice {
+    /* From https://css.glass */
+    background: rgba(46, 138, 12, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    border: 1px solid rgba(46, 138, 12, 0.24);
+    /* From https://css.glass */
+    color: #f1f1f1;
+    height: 3rem;
+    width: 20rem;
+    border: none;
+    outline: 2px solid #20ad07;
+    border-radius: 0.4rem;
+    padding: 0px 10px;
+}
+
+.submit {
+    background: #0d4004;
+    cursor: pointer;
+    color: #f1f1f1;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.submit:hover {
+    background: #20ad07;
+}
