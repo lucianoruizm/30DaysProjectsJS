@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(36, 5, 46);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.clock-container {
+    margin: 250px auto auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 30px;
+}
+
+.clock {
+    border: 1px solid white;
+    padding: 5px;
+    font-size: 50px;
+    color: #f1f1f1;
+    /* From https://css.glass */
+    background: rgba(35, 178, 104, 0.77);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
