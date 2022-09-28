@@ -6,3 +6,10 @@ https://www.instagram.com/p/Cgtxg6drG1M/
 
 07- Quizz App
 https://www.codewithrandom.com/2022/08/03/quiz-app-javascript-quiz-app-source-code-codewithrandom/
+
+08-
+
+09-
+
+10- Text Counter
+https://github.com/tilakjain123/Javascript-Projects/tree/main/Text%20Counter
