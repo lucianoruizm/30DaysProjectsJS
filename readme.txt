@@ -13,3 +13,6 @@ https://www.codewithrandom.com/2022/08/03/quiz-app-javascript-quiz-app-source-co
 
 10- Text Counter
 https://github.com/tilakjain123/Javascript-Projects/tree/main/Text%20Counter
+
+11- Password Generator
+https://www.codewithrandom.com/2022/08/15/password-generator-javascript-source-code-password-generator-html/
