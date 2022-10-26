@@ -1,0 +1,16 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background:linear-gradient(rgb(199, 60, 83),rgb(91, 94, 94))
+}
+
+.timer{
+  color: white;
+  font-size: 56px;
+  font-weight: bolder;
+  border: 5px solid white;
+  padding: 50px;
+  border-radius: 50%;
+}

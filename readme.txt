@@ -32,3 +32,6 @@ https://www.codewithrandom.com/2022/08/15/password-generator-javascript-source-c
 
 12- Check Internet Connection
 https://www.codewithrandom.com/2022/04/29/check-internet-connection-javascript-check-internet-connection-html-css-javascript/
+
+13- Time Counter
+https://www.codewithrandom.com/2022/04/26/time-counter-javascript-how-to-count-time-in-javascript/
