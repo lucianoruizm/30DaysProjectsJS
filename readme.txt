@@ -35,3 +35,6 @@ https://www.codewithrandom.com/2022/04/29/check-internet-connection-javascript-c
 
 13- Time Counter
 https://www.codewithrandom.com/2022/04/26/time-counter-javascript-how-to-count-time-in-javascript/
+
+14-Timer (proyecto en proceso)
+Timer con horas, minutos y segundos, que funciona cuando el usuario selecciona el tiempo en el input. 
