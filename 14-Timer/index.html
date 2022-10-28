@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="number" id="userInput" value="00">
-    <h2 id="displayTimer"> 00 </h2>
-    <button onclick="startTime()">Start Time</button>
-    <button onclick="stopTime()">Stop Time</button>
+    <div class="inputContainer">
+        <input id="mins" type="number" placeholder="minutes">
+        <input id="secs" type="number" placeholder="seconds">
+    </div>
+    <h2 id="timekeeper">00:00.0</h2>
+    <button id="restartBtn">Restart</button>
+    <button id="pauseBtn">Pause</button>
+    <button id="stopBtn">Stop</button>
     <script src="script.js"></script>
 </body>
 </html>
