@@ -11,19 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
         timeDifference = 0,
         dateTime = null;
 
-    const hideElement = element => {
-        element.style.display = "none";
-    }
-
-    const showElement = element => {
-        element.style.display = "";
-    }
 
     const startTimer = (mins, secs) => {
-        hideElement($inputContainer);
-        showElement($pauseBtn);
-        hideElement($startBtn);
-        hideElement($stopBtn);
     
         if(dateTime) {
             dateTime = new Date(new Date().getTime() + timeDifference);
@@ -32,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             console.log('Start');
             const milliseconds = (secs + (mins * 60)) * 1000;
-            dateTime = new date(new Date().getTime() + milliseconds);
+            dateTime = new Date(new Date().getTime() + milliseconds);
         }
     
         clearInterval(idInterval);
@@ -40,9 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const timekeeper = dateTime.getTime() - new Date().getTime();
             if(timekeeper <=0) {
                 console.log("Timer end");
-                clearInterval(idInterval);
-                hideElement($pauseBtn);
-                showElement($stopBtn);
             } else {
                 $timekeeper.textContent = millisecondsToMinutesAndSeconds(timekeeper);
             }
@@ -50,9 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const pauseTimer = () => {
-        hideElement($pauseBtn);
-        showElement($startBtn);
-        showElement($stopBtn);
         timeDifference = dateTime.getTime() - new Date().getTime();
         clearInterval(idInterval)
     };
@@ -76,17 +59,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const millisecondsToMinutesAndSeconds = (milliseconds) => {
         const minutes = parseInt(milliseconds / 1000 / 60);
         milliseconds -= minutes * 60 * 1000;
-        seconds = (milliseconds / 1000);
+        const seconds = (milliseconds / 1000);
         return `${addZero(minutes)}:${addZero(seconds.toFixed(1))}`;
     };
 
     const init = () => {
         $mins.value = "";
         $secs.value = "";
-        showElement($inputContainer);
-        showElement($startBtn);
-        hideElement($pauseBtn);
-        hideElement($stopBtn);
     };
 
     $startBtn.onclick = () => {
