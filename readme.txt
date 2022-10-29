@@ -37,4 +37,6 @@ https://www.codewithrandom.com/2022/04/29/check-internet-connection-javascript-c
 https://www.codewithrandom.com/2022/04/26/time-counter-javascript-how-to-count-time-in-javascript/
 
 14-Timer (proyecto en proceso)
-Timer con horas, minutos y segundos, que funciona cuando el usuario selecciona el tiempo en el input. 
+Timer con horas, minutos y segundos, que funciona cuando el usuario selecciona el tiempo en el input.
+Hecho con la ayuda de los siguientes blogs:
+https://parzibyte.me/blog/2021/07/20/temporizador-javascript-open-source/
