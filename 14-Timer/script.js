@@ -11,9 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
         timeDifference = 0,
         dateTime = null;
 
+    
 
     const startTimer = (hrs, mins, secs) => {
-    
+        
         if(dateTime) {
             dateTime = new Date(new Date().getTime() + timeDifference);
             console.log(dateTime);
@@ -28,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
         clearInterval(idInterval);
         idInterval = setInterval(() => {
             const timekeeper = dateTime.getTime() - new Date().getTime();
-            console.log(timekeeper);
             if(timekeeper <=0) {
                 console.log("Timer end");
                 clearInterval(idInterval);
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         clearInterval(idInterval);
         dateTime = null;
         timeDifference = 0;
-        $timekeeper.textContent = "00:00:00.0";
+        $timekeeper.textContent = "00:00:00";
         init();
     };
 
@@ -90,35 +90,3 @@ document.addEventListener("DOMContentLoaded", () => {
     $pauseBtn.onclick = pauseTimer,
     $stopBtn.onclick = stopTimer;
 });
-
-
-// /*
-// https://parzibyte.me/blog
-// */
-// const agregarCeroSiEsNecesario = valor => {
-// 	if (valor < 10) {
-// 		return "0" + valor;
-// 	} else {
-// 		return "" + valor;
-// 	}
-// }
-// const milisegundosAMinutosYSegundos = (ms) => {
-// 	// const horas = parseInt(milisegundos / 3600000 / 60); // convertido a horas
-//     // minutos = milisegundos / 1000 / 60; // convertido a minutos
-// 	// milisegundos -= horas * 60 * 1000;
-// 	// segundos = (milisegundos / 1000);
-//     const milisegundos = ms % 1000;
-//     ms = (ms - milisegundos) / 1000;
-//     const segundos = ms % 60;
-//     ms = (ms - segundos) / 60;
-//     const minutos = ms % 60;
-//     const horas = (ms - minutos) / 60;
-    
-// 	return `${agregarCeroSiEsNecesario(horas)}:${agregarCeroSiEsNecesario(minutos)}:${agregarCeroSiEsNecesario(segundos.toFixed(1))}`;
-// };
-
-// const pruebas = [3600000, 60000, 15000, 1000, 600000];
-// for (const prueba of pruebas) {
-// 	const conversion = milisegundosAMinutosYSegundos(prueba);
-// 	console.log("Los %d milisegundos se convierten a %s\n", prueba, conversion);
-// }

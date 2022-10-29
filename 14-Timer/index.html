@@ -4,19 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed&display=swap" rel="stylesheet">
     <title>14- Timer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="inputContainer">
-        <input id="hrs" type="number" placeholder="hours">
-        <input id="mins" type="number" placeholder="minutes">
-        <input id="secs" type="number" placeholder="seconds">
-    </div>
-    <h2 id="timekeeper">00:00:00.0</h2>
-    <button id="startBtn">Start</button>
-    <button id="pauseBtn">Pause</button>
-    <button id="stopBtn">Stop</button>
+    <main>
+        <h1>Timer</h1>
+        <div class="timerDisplay">
+            <h2 id="timekeeper">00:00:00</h2>
+        </div>
+        <div class="inputsContainer">
+            <div class="inputBtnContainer">
+                <button class="btnMinus" onclick="this.parentNode.querySelector('input[name=hour]').stepDown()">-</button>
+                 <input id="hrs" name="hour" type="number" placeholder="Select Hours" min="0">
+                <button class="btnPlus" onclick="this.parentNode.querySelector('input[name=hour]').stepUp()">+</button>
+            </div>
+            <div class="inputBtnContainer">
+                <button class="btnMinus" onclick="this.parentNode.querySelector('input[name=minute]').stepDown()">-</button>
+                 <input id="mins" name="minute" type="number" placeholder="Select Minutes" min="0">
+                <button class="btnPlus" onclick="this.parentNode.querySelector('input[name=minute]').stepUp()">+</button>
+            </div>
+            <div class="inputBtnContainer">
+                <button class="btnMinus" onclick="this.parentNode.querySelector('input[name=second]').stepDown()">-</button> 
+                 <input id="secs" name="second" type="number" placeholder="Select Seconds" min="0">
+                <button class="btnPlus" onclick="this.parentNode.querySelector('input[name=second]').stepUp()">+</button>
+            </div>
+        </div>
+        <div class="buttonsContainer">
+            <button id="startBtn" title="Start"><i class="fa-solid fa-play"></i></button>
+            <button id="pauseBtn" title="Pause"><i class="fa-solid fa-pause"></i></button>
+            <button id="stopBtn" title="Stop"><i class="fa-solid fa-stop"></i></button>
+        </div>
+    </main>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/31c015764f.js" crossorigin="anonymous"></script>
 </body>
 </html>

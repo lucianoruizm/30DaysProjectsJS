@@ -41,4 +41,5 @@ Timer con horas, minutos y segundos, que funciona cuando el usuario selecciona e
 Hecho con la ayuda de los siguientes blogs:
   https://parzibyte.me/blog/2021/07/20/temporizador-javascript-open-source/
   https://jsfiddle.net/xola139/z47jyp5x/
+  http://jsfiddle.net/74xa8Ler/ 
 

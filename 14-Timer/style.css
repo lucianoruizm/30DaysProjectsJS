@@ -1,9 +1,117 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #272632;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+main {
+    margin: 90px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.timerDisplay {
+    padding: 20px 60px;
+    /* From https://css.glass */
+    background: rgba(22, 31, 85, 0.59);
+    border-radius: 2px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.3px);
+    -webkit-backdrop-filter: blur(1.3px);
+    border: 1px solid rgba(22, 31, 85, 0.68);
+}
+
+.inputsContainer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 20px;
+    position: relative;
+    max-width: 80%;
+}
+
+.inputBtnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnPlus, .btnMinus {
+    background-color: #201e33;
+    padding: 5px 0;
+}
+
+.btnPlus:hover {
+    background-color: rgb(128, 73, 29);
+}
+
+.btnMinus:hover {
+    background-color: rgb(38, 15, 122);
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+  
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+input {
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+    background: rgba(22, 31, 85, 0.59);
+    border-radius: 2px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.3px);
+    -webkit-backdrop-filter: blur(1.3px);
+    border: 1px solid rgba(22, 31, 85, 0.68);
+}
+
+.buttonsContainer {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    width: 70px;
+    color: white;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+
 #startBtn {
-    color: green;
+    background-color: #3a7e3a;
 }
 #pauseBtn {
-    color: blueviolet;
+    background-color: #632a98;
 }
 #stopBtn {
-    color: red;
+    background-color: #ad2727;
+}
+
+#startBtn:hover {
+    background-color: #3a7e3a8e;
+}
+#pauseBtn:hover {
+    background-color: #632a9885;
+}
+#stopBtn:hover {
+    background-color: #ad27278a;
 }
