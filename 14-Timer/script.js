@@ -7,14 +7,21 @@ document.addEventListener("DOMContentLoaded", () => {
           $mins = document.querySelector("#mins"),
           $secs = document.querySelector("#secs");
     
-    let idInterval = null,
+        let idInterval = null,
         timeDifference = 0,
         dateTime = null;
 
-    
+    const showElement = element => {
+        element.style.display = ""; 
+    }
+    const hideElement = element => {
+        element.style.display = "none"; 
+    }
 
     const startTimer = (hrs, mins, secs) => {
-        
+        showElement($pauseBtn);
+        hideElement($startBtn);
+        showElement($stopBtn);
         if(dateTime) {
             dateTime = new Date(new Date().getTime() + timeDifference);
             console.log(dateTime);
@@ -39,6 +46,9 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const pauseTimer = () => {
+        hideElement($pauseBtn);
+        showElement($startBtn);
+        showElement($stopBtn);
         timeDifference = dateTime.getTime() - new Date().getTime();
         clearInterval(idInterval)
     };
@@ -67,13 +77,16 @@ document.addEventListener("DOMContentLoaded", () => {
         const minutes = ms % 60;
         const hours = (ms - minutes) / 60;
 
-        return `${addZero(hours)}:${addZero(minutes)}:${addZero(seconds.toFixed(1))}`;
+        return `${addZero(hours)}:${addZero(minutes)}:${addZero(seconds)}`;
     };
 
     const init = () => {
         $hrs.value = "";
         $mins.value = "";
         $secs.value = "";
+        showElement($startBtn);
+        hideElement($pauseBtn);
+        hideElement($stopBtn);
     };
 
     $startBtn.onclick = () => {
