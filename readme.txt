@@ -43,3 +43,6 @@ Hecho con la ayuda de los siguientes blogs:
   https://jsfiddle.net/xola139/z47jyp5x/
   http://jsfiddle.net/74xa8Ler/ 
 
+15- Preview file with FileReader API
+https://developer.mozilla.org/es/docs/Web/API/FileReader
+https://www.youtube.com/watch?v=-AR-6X_98rM
