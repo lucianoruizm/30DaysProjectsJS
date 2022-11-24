@@ -46,3 +46,6 @@ Hecho con la ayuda de los siguientes blogs:
 15- Preview file with FileReader API
 https://developer.mozilla.org/es/docs/Web/API/FileReader
 https://www.youtube.com/watch?v=-AR-6X_98rM
+
+16- Calendar Dark Mode
+https://morioh.com/p/6b7fd43b2416
