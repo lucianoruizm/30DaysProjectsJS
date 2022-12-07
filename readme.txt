@@ -1,3 +1,9 @@
+This is JavaScript code compilation about mini projects, 
+from different sources, some have a little modification 
+made by me, and others have help from multiple sources.
+
+All the credits to the creators.
+
 01- Text to Speech
 https://www.instagram.com/p/CheVVnBrQtX/
 
